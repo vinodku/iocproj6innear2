@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- main bean -->
+        <bean id="ps" class="com.nt.beans.person">
+        <property name="name" value="raju"/>
+         <property name="age">
+        <!-- inerbean -->
+        <bean class="com.nt.beans.aadharcard">
+        <property name="aadharno" value="9866"/>
+        <property name="village" value="konaraopet"/>
+        </bean>
+        </property>
+       </bean>
+        </beans>
